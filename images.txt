@@ -1,6 +1,23 @@
-nginx
-#支持私库
-k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
-xhofe/alist:latest
-#支持指定架构
---platform=linux/arm64 xiaoyaliu/alist
+alpine
+kasmweb/nginx:1.25.3
+python:alpine3.19
+nginx:stable-alpine
+mysql:8.0.33
+redis:7.2.4-bookworm
+golang:1.22.1-alpine
+ubuntu:latest
+python:3.10.11-slim-buster
+mariadb:latest
+ubuntu:20.04
+--platform=linux/386 python:3.9-alpine
+--platform=linux/amd64 python:3.9-alpine
+--platform=linux/arm/v6 python:3.9-alpine
+--platform=linux/arm/v7 python:3.9-alpine
+--platform=linux/arm64/v8 python:3.9-alpine
+--platform=linux/ppc64le python:3.9-alpine
+--platform=linux/riscv64 python:3.9-alpine
+--platform=linux/s390x python:3.9-alpine
+gcr.io/k8s-minikube/kicbase:v0.0.44
+golang:1.19.0-alpine
+scratch
+python:3.8-slim
